@@ -5,6 +5,8 @@ interface ModalContextProps{
     modalContext: ReactNode;
     openModal: (content: ReactNode)=>void;
     closeModal: ()=>void;
+    overlayOpaque: boolean;
+    setOverlayOpaque: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const ModalContext = createContext<ModalContextProps | null>(null)
@@ -16,6 +18,7 @@ interface ModalProviderProps{
 export function ModalProvider({children}:ModalProviderProps){
     const [isModalOpen,setIsModalOpen] = useState<boolean>(false)
     const [modalContext,setModalContent] = useState<ReactNode>(null)
+    const [overlayOpaque,setOverlayOpaque] = useState<boolean>(true)
 
     const openModal = (content: ReactNode)=>{
         setIsModalOpen(true)
@@ -26,7 +29,7 @@ export function ModalProvider({children}:ModalProviderProps){
         setIsModalOpen(false)
     }
     return (
-        <ModalContext.Provider value={{isModalOpen,closeModal,openModal, modalContext}}>
+        <ModalContext.Provider value={{isModalOpen,closeModal,openModal, modalContext,overlayOpaque,setOverlayOpaque}}>
             {children}
         </ModalContext.Provider>
     )
