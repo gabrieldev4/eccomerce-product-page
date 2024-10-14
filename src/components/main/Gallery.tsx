@@ -44,11 +44,11 @@ export function Gallery(){
                         onClick={lastImage}
                     />
                     <MdKeyboardArrowRight 
-                        className="bg-white rounded-full text-4xl max-[575px]:pointer-events-none cursor-pointer sm:hidden z-40"
+                        className="bg-white rounded-full text-4xl cursor-pointer sm:hidden z-40"
                         onClick={nextImage}   
                     />
                 </div>
-                <img src={list[currentIndex].img} alt="" className="sm:h-96 sm:rounded-xl cursor-pointer z-30" onClick={handleOpenModal}/>
+                <img src={list[currentIndex].img} alt="" className="sm:h-96 sm:rounded-xl max-[575px]:pointer-events-none cursor-pointer z-30" onClick={handleOpenModal}/>
             </div>
             <div className="hidden sm:flex justify-between gap-5">
                 <span onClick={()=>handleChangePhoto(0)} className="cursor-pointer hover:opacity-50 ">

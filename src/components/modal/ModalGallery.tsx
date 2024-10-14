@@ -15,6 +15,7 @@ export function ModalGallery({currentPhoto}: ModalGalleryProps){
         { img: "/image-product-3.jpg", thumb: "/image-product-3-thumbnail.jpg"},
         { img: "/image-product-4.jpg", thumb: "/image-product-4-thumbnail.jpg"},
     ]
+    
     const [currentIndexModal, setCurrentIndexModal] = useState<number>(currentPhoto)
     const {closeModal}= useModalContext()
         // modal
@@ -45,7 +46,7 @@ export function ModalGallery({currentPhoto}: ModalGalleryProps){
                 </button>
 
                 <div className="flex justify-center items-center mb-4 pt-10">
-                    <div className="absolute z-30 bg-transparent w-130 flex justify-between gap-10 items-center">
+                    <div className="absolute z-30 bg-transparent w-108 flex justify-between gap-0 items-center">
                         <MdKeyboardArrowLeft 
                             className="bg-white rounded-full text-5xl cursor-pointer hover:text-primary"
                             onClick={lastImageModal}
