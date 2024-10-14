@@ -1,9 +1,9 @@
 import { FaBars } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { useModalContext } from "../context/ModalContext";
+import { useModalContext } from "../../context/ModalContext";
 import { IoIosClose } from "react-icons/io";
 import { DropDown } from "./Dropdown";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 
 export function NavBar(){

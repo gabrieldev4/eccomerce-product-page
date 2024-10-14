@@ -10,11 +10,15 @@ export function Modal(){
     
     return ReactDOM.createPortal(
         <div>
-            <div className="flex justify-center">
+            {/* <div className="fixed inset-0 flex justify-center items-center z-20">
+                {modalContext}
+            </div> */}
+            <div className="flex justify-center items-center">
                 {modalContext}
             </div>
             <div 
-                className={`${overlayOpaque? 'bg-very-dark-blue bg-opacity-50':'bg-transparent'} fixed bottom-0 top-0 left-0 right-0 z-20`}
+                className={`${overlayOpaque? 'bg-very-dark-blue bg-opacity-65':'bg-transparent'} fixed bottom-0 top-0 left-0 right-0 z-20`}
+                
                 onClick={clickOut}
             ></div>
         </div>,

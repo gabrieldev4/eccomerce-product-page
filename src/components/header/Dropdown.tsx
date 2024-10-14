@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext"
+import { useCart } from "../../context/CartContext"
 import { FaTrashAlt } from "react-icons/fa";
 
 export function DropDown(){

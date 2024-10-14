@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+   extend:{
     colors:{
       transparent: 'transparent',
       current: 'currentColor',
@@ -18,6 +19,12 @@ export default {
       'pale-orange': 'hsl(25, 100%, 94%)',
       extends:[]
     },
+                        
+    spacing:{
+      '128': '32rem',
+      '130': '34rem',
+    }
+   }
   },
   plugins: [],
 }
