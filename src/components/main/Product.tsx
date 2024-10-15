@@ -44,7 +44,7 @@ export function Product(){
                     <span className="text-xl font-bold text-dark-grayish-blue line-through">$250.00</span>
                 </div>
             </div>
-            <footer className="sm:mb-20 lg:mb-0 md:flex md:gap-4 md:items-center">
+            <footer className="mb-20 lg:mb-0 md:flex md:gap-4 md:items-center">
                 <div className="flex justify-between px-4 py-4 items-center gap-2 md:w-1/3 bg-light-grayish-blue rounded-lg">
                     <IoIosRemove className="text-primary text-4xl md:text-2xl font-bold cursor-pointer hover:opacity-90" onClick={handleRemoveProduct}/>
                     <span className="font-bold text-2xl md:text-xl">{prevItem}</span>

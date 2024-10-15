@@ -1,5 +1,5 @@
 import ReactDOM  from "react-dom"
-import { useModalContext } from "../context/ModalContext"
+import { useModalContext } from "../../context/ModalContext";
 export function Modal(){
     const {isModalOpen,closeModal, modalContext,overlayOpaque} = useModalContext()
 

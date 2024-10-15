@@ -1,4 +1,4 @@
-import { Modal } from "./components/Modal"
+import { Modal } from "./components/modal/Modal"
 import { NavBar } from "./components/header/Navbar"
 import { Gallery } from "./components/main/Gallery"
 import { Product } from "./components/main/Product"

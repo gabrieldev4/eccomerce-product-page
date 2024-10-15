@@ -38,7 +38,7 @@ export function Gallery(){
     return (
         <div className="gap-10 flex flex-col md:w-1/2 justify-center">
             <div className="relative flex items-center justify-center">
-                <div className="absolute bg-transparent w-full w- h-full flex items-center justify-between">
+                <div className="absolute px-4 bg-transparent w-full w- h-full flex items-center justify-between">
                     <MdKeyboardArrowLeft 
                         className="bg-white rounded-full text-4xl cursor-pointer sm:hidden z-40"
                         onClick={lastImage}
@@ -48,7 +48,7 @@ export function Gallery(){
                         onClick={nextImage}   
                     />
                 </div>
-                <img src={list[currentIndex].img} alt="" className="sm:h-96 sm:rounded-xl max-[575px]:pointer-events-none cursor-pointer z-30" onClick={handleOpenModal}/>
+                <img src={list[currentIndex].img} alt="" className="sm:h-96 sm:rounded-xl max-[639px]:pointer-events-none cursor-pointer z-30" onClick={handleOpenModal}/>
             </div>
             <div className="hidden sm:flex  gap-5 md:justify-center">
                 <span onClick={()=>handleChangePhoto(0)} className="cursor-pointer hover:opacity-50 ">

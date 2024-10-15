@@ -36,7 +36,7 @@ export function ModalGallery({currentPhoto}: ModalGalleryProps){
 
     return (
         <div className="bg-transparent fixed flex flex-col items-center gap-8 top-5 z-40">
-            <div className="relative z-30 bg-transparent p-4 rounded-lg shadow-lg max-w-3xl w-full">
+            <div className="relative z-30 bg-transparent p-4 rounded-lg  max-w-3xl w-full">
                 {/* Botão de Fechar */}
                 <button
                     onClick={closeModal}
